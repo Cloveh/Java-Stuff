@@ -1,0 +1,31 @@
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.swt.events.SelectionListener;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.Text;
+
+public class Button1 {
+
+	public static void main(String[] args) {
+		Display display = new Display();
+		Shell shell = new Shell(display);
+		shell.setSize(1920, 1080);
+		shell.setText("Button");
+
+		Button button = new Button(shell, SWT.PUSH);
+		button.setBounds(40, 50, 50, 20);
+		button.setText("Back");
+
+		final Text text = new Text(shell, SWT.BORDER);
+		text.setBounds(100, 50, 70, 20);
+
+		shell.open();
+		while (!shell.isDisposed()) {
+			if (!display.readAndDispatch())
+				display.sleep();
+		}
+		display.dispose();
+	}
+}

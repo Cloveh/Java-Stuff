@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="javax.swing.JFrame"/>
+<fullyQualifiedTypeName name="javax.swing.JButton"/>
+<fullyQualifiedTypeName name="javax.swing.JPanel"/>
+<fullyQualifiedTypeName name="chrriis.dj.nativeswing.NativeSwing"/>
+<fullyQualifiedTypeName name="chrriis.dj.nativeswing.NativeComponentWrapper"/>
+<fullyQualifiedTypeName name="chrriis.dj.nativeswing.swtimpl.components.JWebBrowser"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.widgets.Display"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.widgets.Shell"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.browser.Browser"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.events.ModifyListener"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.events.MouseListener"/>
+<fullyQualifiedTypeName name="java.awt.event.KeyAdapter"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.events.KeyListener"/>
+</qualifiedTypeNameHistroy>

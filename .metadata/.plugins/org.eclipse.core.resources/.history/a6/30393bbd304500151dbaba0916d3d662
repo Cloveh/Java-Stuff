@@ -1,0 +1,10 @@
+import java.util.Scanner;
+
+public class ClassMadlibs {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		String imput = scan.next();
+		System.out.println(imput);
+	}
+}

@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class CalculatorSource {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int result = 0;
+
+		System.out.println("imput the first number you want to use");
+		int x = scan.nextInt();
+
+		System.out.println("input the second number");
+		int y = scan.nextInt();
+
+		System.out
+				.println("Choose what opperation you would like to use (+,-,*,/)");
+		String o = scan.next();
+
+		if (o.equals("+")){
+			
+			result = x + y;
+
+		}
+		
+		else if (o.equals("-")){
+			
+			result = x - y;
+			
+		}
+		
+		else if (o.equals("*")){
+			
+			result = x * y;
+			
+		}
+		
+		
+		else if (o.equals("/")){
+			
+			result = x / y;
+			
+		}
+		
+		System.out.println(result);
+
+	}
+}

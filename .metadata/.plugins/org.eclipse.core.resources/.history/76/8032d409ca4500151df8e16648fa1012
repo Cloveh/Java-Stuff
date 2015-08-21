@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+public class CalculatorSource {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in); // initializing the scanner
+		int result = 0; // initializing result so it will work later on
+
+		while (0 < 1) {
+
+			System.out.println("Input the first number you want to use");
+			int x = scan.nextInt();
+
+			System.out.println("Input the second number");
+			int y = scan.nextInt();
+
+			System.out
+					.println("Choose what operation you would like to use (+,-,*,/, ^)");
+			String o = scan.next();
+
+			if (o.equals("+")) { // how add works
+
+				result = x + y;
+
+			}
+
+			else if (o.equals("-")) { // how subtract works
+
+				result = x - y;
+
+			}
+
+			else if (o.equals("*")) { // how multiply works
+
+				result = x * y;
+
+			}
+
+			else if (o.equals("/")) { // how divide works
+
+				result = x / y;
+
+			}
+			
+			else if (o.equals("^")) {
+				
+				result = (int) Math.pow(x, y);
+				
+			}
+
+			System.out.println(result); // how it prints result of the equation
+
+		}
+
+	}
+
+}

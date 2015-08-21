@@ -1,0 +1,50 @@
+import org.eclipse.swt.*;
+import org.eclipse.swt.browser.Browser;
+import org.eclipse.swt.widgets.*;
+
+import chrriis.dj.nativeswing.NativeComponentWrapper;
+import chrriis.dj.nativeswing.NativeSwing;
+import chrriis.dj.nativeswing.swtimpl.components.JWebBrowser;
+
+public class WebSource {
+
+	public static void main(String[] args) {
+		NativeSwing.initialize();
+		Display display = new Display();
+		Shell shell = new Shell(display);
+		shell.setSize(1920, 1080);
+		
+//		Label label = new Label(shell, SWT.NO_TRIM);
+//		label.setText("BACK");
+//		label.setSize(150,50);
+//		label.setLocation(20,10); 
+
+		Button button = new Button(shell, SWT.PUSH);
+		button.setText("BACK");
+		button.setSize(100, 45);
+		button.setLocation(10, 15);
+		
+		Button button2 = new Button(shell, SWT.PUSH);
+		button.setText("REFRESH (DRINK WATER)");
+		button.setSize(100, 45);
+		button.setLocation(20, 15);
+		
+		Text addressBar = new Text(shell, 1);
+		addressBar.setLocation(200, 15);
+		addressBar.setSize(1000, 45);
+		
+		Browser browser = new Browser(shell, 0);
+		browser.setSize(1700, 900);
+		browser.setLocation(100, 100);
+		
+		browser.setUrl("http://google.com");
+		
+		shell.open();
+		while (!shell.isDisposed()) {
+			if (!display.readAndDispatch()) {
+				display.sleep();
+			}
+		}
+		display.dispose();
+	}
+}
